@@ -16,7 +16,10 @@ jobs:
     strategy:
       matrix:
         dotnet-version: [ '6.0','8.0' ]
-        
+concurrency:
+   group: dotnet-${{github.ref}}
+   cancel-in-progress: false
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -30,13 +33,11 @@ jobs:
     - name: Display dotnet version
       run: dotnet --version
     - name: Install dependencies
-      timeout-minutes: 30
       run: dotnet add package Newtonsoft.Json --version 12.0.1
       working-directory: GithubActionDemo
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      timeout-minutes: 30
       run: dotnet build --no-restore
       working-directory: GithubActionDemo
     - name: Test
