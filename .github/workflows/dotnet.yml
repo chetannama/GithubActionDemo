@@ -41,7 +41,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
-      working-directory: GithubActionDemo
+      #working-directory: GithubActionDemo
     - name: Test
       run:  dotnet test --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
     - name: Upload dotnet test results
