@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\InterviewPrep\\InterviewPrep\\InterviewPrep\\InterviewPrep.csproj",
+      "projectUniqueName": "F:\\InterviewPrep\\GitHubAction\\GithubActionDemo\\InterviewPrep\\InterviewPrep.csproj",
       "projectName": "InterviewPrep",
-      "projectPath": "F:\\InterviewPrep\\InterviewPrep\\InterviewPrep\\InterviewPrep.csproj",
+      "projectPath": "F:\\InterviewPrep\\GitHubAction\\GithubActionDemo\\InterviewPrep\\InterviewPrep.csproj",
       "packagesPath": "C:\\Users\\Chetan Nama\\.nuget\\packages\\",
-      "outputPath": "F:\\InterviewPrep\\InterviewPrep\\InterviewPrep\\obj\\",
+      "outputPath": "F:\\InterviewPrep\\GitHubAction\\GithubActionDemo\\InterviewPrep\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

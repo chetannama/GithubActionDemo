@@ -22,10 +22,10 @@ namespace InterviewPrep.Abstraction
 
         public override double MonthlySalary()
         {
-            FullTimeEmployee ff = new FullTimeEmployee();
-            ff.AnnualSalary = 100000;
+            //var ff = new FullTimeEmployee();
+            AnnualSalary = 100000;
 
-            return ff.AnnualSalary/12;
+            return AnnualSalary/12;
         }
     }
 }
