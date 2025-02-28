@@ -31,10 +31,12 @@ jobs:
       run: dotnet --version
     - name: Install dependencies
       run: dotnet add package Newtonsoft.Json --version 12.0.1
+      working-directory: GithubActionDemo
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --no-restore
+      working-directory: GithubActionDemo
     - name: Test
       run:  dotnet test --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
     - name: Upload dotnet test results
