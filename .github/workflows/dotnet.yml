@@ -34,8 +34,10 @@ jobs:
     - name: Display dotnet version
       run: dotnet --version
     - name: Restore dependencies
+      timeout-minutes: 30
       run: dotnet restore
     - name: Install dependencies
+      timeout-minutes: 30
       run: dotnet add package Newtonsoft.Json --version 12.0.1
       working-directory: GithubActionDemo
     - name: Build
