@@ -41,7 +41,7 @@ jobs:
       run: dotnet build --no-restore
     - name: Install dependencies
       run: dotnet add package Newtonsoft.Json --version 12.0.1
-      #working-directory: GithubActionDemo
+      working-directory: './InterviewPrep'
     - name: Test
       run:  dotnet test --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
     - name: Upload dotnet test results
